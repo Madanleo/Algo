@@ -1,4 +1,4 @@
-# Algo
+## Algo
 Here, i am writing some algorithms in java with some changes like taking commands from user. These algorithms are written by taking references from Princeton University.
 The first problem is Dynamic Connectivity.
 What is a Dynamic Connectivity Problem ?
