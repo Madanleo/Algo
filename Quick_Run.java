@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.io.*;
 
 class QuickFind {
     private int[] id;
@@ -30,12 +30,13 @@ class Quick_Run {
 
         QuickFind obj = new QuickFind(10);
 
-        try (Scanner myscan = new Scanner(System.in);) {
+        try (BufferedReader myscan = new BufferedReader(new InputStreamReader(System.in));) {
             
-            System.out.println("Enter the p and q value");
-            int p = myscan.nextInt();
-
-            int q = myscan.nextInt();
+            System.out.println("Enter the p value");
+            int p = Integer.parseInt(myscan.readLine());
+            
+            System.out.println("Enter the q value");
+            int q = Integer.parseInt(myscan.readLine());
 
             obj.union(p,q);
 
